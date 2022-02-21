@@ -12,8 +12,8 @@ ul{
 
 
 nav{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: purple;
     position: sticky;
     top: 0;
@@ -23,10 +23,7 @@ nav{
     justify-content: space-between;
 }
 
-h1{
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .top-nav{
     display: flex;
@@ -49,7 +46,7 @@ h1{
     background-color: red;
     display : flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:space-around;
 }
 
 .home-content{
@@ -61,17 +58,56 @@ h1{
 }
 
 .skills{
+    color: rgb(0, 0, 0);
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
     flex-direction: column;
-    height:99rem ;
-    background-color: rgb(102, 90, 90);
+    align-items: center;
+    height:auto ;
+    background-color: rgb(194, 75, 75);
 }
 
 .skills ul{
+    gap: 1rem;
+
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     
+}
+.skills ul li{
+    line-height: 3em;
+    flex: 1 0 21%
+}
+
+#projects{
+    justify-content: center;
+    display: flex;
+    gap: 5%;
+
+}
+
+
+@media screen and (max-width: 801px) {
+    nav{
+        padding: 1%;
+
+    }
+    .skills{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #projects{
+        flex-direction: column;
+        align-items: center;
+    }
+    #projects img{
+        height: 50%;
+        width: 50%;
+    }
+
 }
