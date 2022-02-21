@@ -38,37 +38,35 @@ nav{
 
 }
 
-.divide{
-    background-color: gray;
-    height: 3rem;
-}
 
 .home{
-    
-    padding-left: 1%;
-    padding-right: 1%;
-    height: fit-content;
     background-image: url("../images/code_bg.jpg");
-    /* background-color: red; */
-    display : flex;
-    align-items: center;
-    justify-content:space-around;
-    /* backdrop-filter: blur(10px); */
+    height: 500px;
+    background-color: red;
+
 }
 
 .home-content{
+    color:white;
     height: 100%;
     width: 100%;
-    color:white;
-    margin-left: 3%;
-    /* background-color: blueviolet; */
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.home-description{
+    border: 2px #FFFFFF solid;
+    border-radius: 10px;
+    padding: 0 10px 0 20px;
+    width: 20%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: 1px white solid;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
 }
+
 
 .skills{
     color: rgb(0, 0, 0);
@@ -95,14 +93,13 @@ nav{
     flex: 1 0 21%
 }
 
-#projects{
+.projects{
     justify-content: center;
+    align-items: center;
     display: flex;
     gap: 5%;
 
 }
-
-
 .projects-content{
     display: flex;
     flex-direction: column;
@@ -110,13 +107,16 @@ nav{
     justify-content: center;
 }
 
-#projects img { 
+
+
+img { 
     transition: 0.5s ; 
     padding-bottom: 20px;
 }
-#projects img:hover { 
-    transform: rotate(3deg) scale(1.1); 
-    transition: 0.3s ; 
+img:hover { 
+    border-radius: 50%;
+    transform: rotate(10deg) ; 
+    transition: 0.5s ; 
 }
 
 
@@ -125,25 +125,49 @@ nav{
 
 @media screen and (max-width: 801px) {
     nav{
+        position: relative;
         padding: 1%;
+        flex-direction: column;
+        padding-bottom: 20px;
 
     }
-    .home{
+    .top-nav{
         flex-direction: column;
+    }
+    .home{
+        height: fit-content;
+    }
+    .home-content{
+        padding-top: 20px;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .home-description{
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 100%
     }
     .skills{
         padding: 0;
         margin: 0;
         width: 100%;
-    }
-
-    #projects{
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
-    #projects img{
-        height: 50%;
-        width: 50%;
+
+    .projects{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
+    .projects-content{
+        margin-bottom: 50px;
+    }
+
+
+
 }
+
+
