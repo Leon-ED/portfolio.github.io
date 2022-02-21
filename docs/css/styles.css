@@ -3,8 +3,9 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
-background: rgb(50,50,50);
-background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(145,145,145,1) 0%, rgba(208,208,208,1) 100%);
+/* background: rgb(50,50,50); */
+/* background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(145,145,145,1) 0%, rgba(208,208,208,1) 100%); */
+background: linear-gradient(180deg, #d2d2d2 0%, #FFFFFF 100%) fixed;
 }
 
 
