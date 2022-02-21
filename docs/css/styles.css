@@ -3,6 +3,8 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+background: rgb(50,50,50);
+background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(145,145,145,1) 0%, rgba(208,208,208,1) 100%);
 }
 
 
@@ -12,9 +14,10 @@ ul{
 
 
 nav{
+    z-index: 99999;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: purple;
+    background-color: rgb(255, 255, 255);
     position: sticky;
     top: 0;
     left: 0;
@@ -35,26 +38,35 @@ nav{
 }
 
 .divide{
-    background-color: blue;
+    background-color: gray;
     height: 3rem;
 }
 
 .home{
+    
     padding-left: 1%;
     padding-right: 1%;
-    height: 20rem;
-    background-color: red;
+    height: fit-content;
+    background-image: url("../images/code_bg.jpg");
+    /* background-color: red; */
     display : flex;
     align-items: center;
     justify-content:space-around;
+    /* backdrop-filter: blur(10px); */
 }
 
 .home-content{
+    height: 100%;
+    width: 100%;
+    color:white;
     margin-left: 3%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px white solid;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
 }
 
 .skills{
@@ -65,7 +77,7 @@ nav{
     flex-direction: column;
     align-items: center;
     height:auto ;
-    background-color: rgb(194, 75, 75);
+    /* background-color: rgb(194, 75, 75); */
 }
 
 .skills ul{
@@ -90,10 +102,33 @@ nav{
 }
 
 
+.projects-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects img { 
+    transition: 0.5s ; 
+    padding-bottom: 20px;
+}
+#projects img:hover { 
+    transform: rotate(3deg) scale(1.1); 
+    transition: 0.3s ; 
+}
+
+
+
+
+
 @media screen and (max-width: 801px) {
     nav{
         padding: 1%;
 
+    }
+    .home{
+        flex-direction: column;
     }
     .skills{
         padding: 0;
