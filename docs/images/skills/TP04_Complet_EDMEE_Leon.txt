@@ -1,0 +1,162 @@
+EDMEE Léon TP4
+
+--- Mises à jour simultanées 
+
+
+0.5)
+CREATE SCHEMA tp4;
+SET search_path TO tp4
+GRANT CONNECT ON DATABASE "leon.edmee_db" TO "sofiane.doumi"; 
+GRANT USAGE ON SCHEMA tp4 TO "sofiane.doumi";
+GRANT DELETE, SELECT, UPDATE ON "produit" TO "sofiane.doumi"; 
+
+1)
+create table produit(num int primary key, nom varchar(25), prix float); 
+
+
+2)
+BEGIN;
+INSERT INTO produit VALUES(51,'Pastis 51',23.99);
+
+4)
+Ca a validé mon insert mais pas celui de USER2 car la clé produit était déja utilisé
+
+5)
+Ca aurait marché
+
+7)
+INSERT INTO produit VALUES(59,'Pastis 59',23.99):
+
+9)
+COMMIT;
+
+10)
+Toujours le même
+
+
+11)
+Le prix n'a pas changé pour le pastis 59
+
+
+
+--- SELECT FOR UPDATE 
+
+2)
+SELECT * FROM produit WHERE nom LIKE '%Pastis%';
+
+4)
+SELECT * FROM produit WHERE nom LIKE '%Pastis%';
+UPDATE produit SET prix = prix+10 WHERE prix < 30 AND nom LIKE '%Pastis%';
+
+5)
+OUi
+6)
+ROLLBACK;
+Le prix est revenu a 24
+
+--UPDATE
+
+1)
+UPDATE produit SET prix = 23.99 WHERE num = 59;
+
+2)
+SELECT * FROM produit WHERE nom LIKE '%Pastis%' FOR UPDATE;
+
+3)
+Sa requete est bloquée
+
+4)
+Toujours bloqué
+
+-- DEADLOCK
+
+1) UPDATE produit SET prix = 1 WHERE num=51;
+
+3) UPDATE produit SET prix = 2.10 WHERE num=59;
+
+5)
+Une des deux transaction a été annulée automatiquement par postGreSQL car elles entraient en conflit
+ERREUR:  Bloquage mortel détecté
+DÉTAIL : Le processus 23269 attend ShareLock sur transaction 32807477 ; bloqué par le processus 22159.
+Le processus 22159 attend ShareLock sur transaction 32807478 ; bloqué par le processus 23269.
+ASTUCE : Voir les journaux applicatifs du serveur pour les détails sur la requête.
+CONTEXTE : lors de la mise à jour de la ligne (0,11) dans la relation « produit »
+
+
+--- Niveau isolation
+
+1)
+GRANT DELETE, SELECT, UPDATE, INSERT ON "isol" TO "sofiane.doumi"; 
+
+2)
+insert into isol (select 2, sum(valeur) from isol where classe=1); 
+
+6)
+OUi
+
+
+7)
+Voir au dessus
+
+8)
+Oui
+
+
+
+
+REQUETES IMBRIQUEES
+-------------------
+
+1)
+SELECT employe.nomemploye FROM employe, service WHERE nomservice LIKE 'Recherche' AND service.numservice = employe.numservemploye ORDER BY employe.nomemploye;
+
+SELECT employe.nomemploye FROM employe WHERE numservemploye = (SELECT numservice FROM service WHERE nomservice LIKE 'Recherche') ORDER BY nomemploye;
+
+
+2)
+SELECT employe.nomemploye Nom, employe.mat Matricule FROM employe WHERE numservemploye IN (SELECT numservice FROM service WHERE lieu LIKE 'Metz');
+
+
+3)
+SELECT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,11 +2,17 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, #d2d2d2 0%, #FFFFFF 100%) fixed;
+
     margin: 0;
+}  
+*{
+    scroll-behavior: smooth;
+    scroll-margin-top: 50px;
+}
 /* background: rgb(50,50,50); */
 /* background: linear-gradient(90deg, rgba(50,50,50,1) 0%, rgba(145,145,145,1) 0%, rgba(208,208,208,1) 100%); */
-background: linear-gradient(180deg, #d2d2d2 0%, #FFFFFF 100%) fixed;
-}
+
 
 
 ul{
@@ -19,6 +25,7 @@ nav{
     padding-left: 10%;
     padding-right: 10%;
     background-color: rgb(255, 255, 255);
+
     position: sticky;
     top: 0;
     left: 0;
@@ -42,7 +49,6 @@ nav{
 .home{
     background-image: url("../images/code_bg.jpg");
     height: 500px;
-    background-color: red;
 
 }
 
@@ -76,12 +82,11 @@ nav{
     flex-direction: column;
     align-items: center;
     height:auto ;
-    /* background-color: rgb(194, 75, 75); */
 }
 
 .skills ul{
     gap: 1rem;
-
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -129,6 +134,7 @@ img:hover {
         padding: 1%;
         flex-direction: column;
         padding-bottom: 20px;
+        
 
     }
     .top-nav{
@@ -136,27 +142,34 @@ img:hover {
     }
     .home{
         height: fit-content;
+        
     }
     .home-content{
         padding-top: 20px;
         flex-direction: column;
         height: fit-content;
+        
     }
     .home-description{
         align-items: center;
         justify-content: center;
         border: none;
-        width: 100%
+        width: auto;
     }
     .skills{
         padding: 0;
         margin: 0;
-        width: 100%;
+        /* width: 100%; */
         justify-content: center;
         align-items: center;
+        
+    }
+    .skills ul{
+        width: auto;
     }
 
     .projects{
+        
         flex-direction: column;
         align-items: center;
         justify-content: center;
