@@ -5,87 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../docs/css/styles.css">
+
     <title>EDMEE Leon portfolio</title>
 </head>
 <body id="home">
-    <nav>
-        <h1>Léon EDMEE</h1>
-        <ul class="top-nav">
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#skills">Mes compétences</a></li>
-            <li><a href="#projects">Mes projets</a></li>
-            <li><a href="#home">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="home">
-        <div class="home-content">
-            <img src="../../docs/images/place_holder.png" alt="" height="300">
-                <div class="home-description">
-                    <h1>Apprenti développeur</h1>
+        <div>
+            <input class="Darkmode" type="checkbox">Darkmode</input>
+        </div>
+    <div class="theme">
+        <nav>
+            <h1>Léon EDMEE</h1>
+            <ul class="top-nav">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#skills">Mes compétences</a></li>
+                <li><a href="#projects">Mes projets</a></li>
+                <li><a href="#home">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="home">
+            <div class="home-content">
+                <img src="../../docs/images/place_holder.png" alt="" height="300">
+                    <div class="home-description">
+                        <h1>Apprenti développeur</h1>
+                    <p>
+                        Etudiant en BUT Informatique à la recherche d'une alternance d'une durée de 24 mois.
+                        Au rythme d'une semaine en entreprise / une semaine en formation.
+                    </p>
+                    <div>
+
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <h1>Compétences informatiques</h1>
+            <ul class="skills-list" id="skills">
+                <li><img src="../../docs/images/skills/py_logo.png" title="Python"alt="Python" height="100"></li>
+                <li><img src="../../docs/images/skills/java_logo.png" alt="Java" height="100"></li>
+                <li><img src="../../docs/images/skills/c_logo.png" alt="C" height="100"></li>
+                <li><img src="../../docs/images/skills/post_gre.png" alt="PostGreSQL" height="100"></li>
+                <li><img src="../../docs/images/skills/git_logo.png" alt="Git" height="100"></li>
+                <li><img src="../../docs/images/skills/vsc_logo.png" alt="Visual Studio Code" height="100"></li>
+                <li><img src="../../docs/images/skills/logo_placeholder.png" alt="Eclipse" height="100"></li>
+
+            </ul>
+            <h1>Compétences professionnelles</h1>
+            <ul class="skills-list">
+                <!-- <li>Autonome</li> -->
+                <li><img src="../../docs/images/skills/teamwork.png" alt="Travail d'équipe" height="100"></li>
+                <li><img src="../../docs/images/skills/comm.png" alt="Travail d'équipe" height="100"></li>
+                <li><img src="../../docs/images/skills/fast-learner.png" alt="Apprends rapidement" height="100"></li>
+            </ul>
+            <h1>Mes projets</h1>
+        </div>
+
+        <div class="projects" id="projects">
+
+            <div class="projects-content" onclick="click()">
+                <img src="../../docs/images/place_holder.png" alt="Azul project" height="300">
+                <h2>Projet Python</h2>
+            </div>
+            <div class="project-desc" id="python" style="display: none;">
                 <p>
-                    Etudiant en BUT Informatique à la recherche d'une alternance d'une durée de 24 mois.
-                    Au rythme d'une semaine en entreprise / une semaine en formation.
+                    <h3>Projet 1er semestre du BUT Informatique :</h3>
+                    <strong>Sujet du projet : </strong><a href="http://">Ici</a><br>
+                    <strong>Durée :</strong> 3 mois.<br>
+                    <strong>Langages(s) :</strong> Python. <br>
+                    <strong>Matière(s) :</strong>Initiation au développement. <br>
+                    <strong>Configuration : </strong>Travail en binôme . <br>
+                    <strong>Note obtenue : </strong>15,5/20<br>
+                    <strong>Description : </strong><br>
+                    
+                    Reproduction du jeu <a href="http://">Azul</a> en Python avec l'interface graphique de l'université upemtk.<br>
+                    Interdiction d'utiliser d'autres modules que ceux standard de Python et la programmation orientée objets.<br>
+                    Implémentation d'un fonction de sauvegarde, de la possibilité de jouer jusqu'à 4 joueurs et d'un mode de jeu en affrontant l'ordinateur.<br>
                 </p>
-                <div>
+            </div>
 
-                </div>
-                </div>
+
+
+
+            <div class="projects-content">
+                <img src="../../docs/images/place_holder.png" alt="Unesco project" height="300">
+                <h2>Projet UNESCO</h2>
+            </div>
+            <div class="projects-content">
+                <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
+                <h2>Projet Base de données</h2>
+            </div>
+            <div class="projects-content">
+                <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
+                <h2>Projet Java</h2>
+            </div>
+            <div class="projects-content">
+                <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
+                <h2>Projet IHM</h2>
+            </div>
+            <div class="projects-content">
+                <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
+                <h2>Projet IHM</h2>
+            </div>
+
 
         </div>
-
-
-
-
-    </div>
-    <div class="skills" id="skills">
-        <h1>Compétences informatiques</h1>
-        <ul class="skills-list" id="skills">
-            <li><img src="../../docs/images/skills/py_logo.png" title="Python"alt="Python" height="100"></li>
-            <li><img src="../../docs/images/skills/java_logo.png" alt="Java" height="100"></li>
-            <li><img src="../../docs/images/skills/c_logo.png" alt="C" height="100"></li>
-            <li><img src="../../docs/images/skills/post_gre.png" alt="PostGreSQL" height="100"></li>
-            <li><img src="../../docs/images/skills/git_logo.png" alt="Git" height="100"></li>
-            <li><img src="../../docs/images/skills/vsc_logo.png" alt="Visual Studio Code" height="100"></li>
-            <li><img src="../../docs/images/skills/logo_placeholder.png" alt="Eclipse" height="100"></li>
-
-        </ul>
-        <h1>Compétences professionnelles</h1>
-        <ul class="skills-list">
-            <!-- <li>Autonome</li> -->
-            <li><img src="../../docs/images/skills/teamwork.png" alt="Travail d'équipe" height="100"></li>
-            <li><img src="../../docs/images/skills/comm.png" alt="Travail d'équipe" height="100"></li>
-            <li><img src="../../docs/images/skills/fast-learner.png" alt="Apprends rapidement" height="100"></li>
-        </ul>
-        <h1>Mes projets</h1>
-    </div>
-
-    <div class="projects" id="projects">
-
-        <div class="projects-content">
-            <img src="../../docs/images/place_holder.png" alt="Azul project" height="300">
-            <h2>Projet Azul</h2>
-        </div>
-
-        <div class="projects-content">
-            <img src="../../docs/images/place_holder.png" alt="Unesco project" height="300">
-            <h2>Projet UNESCO</h2>
-        </div>
-        <div class="projects-content">
-            <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
-            <h2>Projet Base de données</h2>
-        </div>
-
-
-
-
     </div>
 
 
 
 
 
-
-
+<script>
+    function click(elem) {
+        console.log("eeeeeeee");
+        var x = document.getElementById(elem);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
 
 
