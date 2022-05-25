@@ -104,16 +104,30 @@ nav{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
 
+
+}
+
+.project-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .projects-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 5%;
 }
 
+.project-container{
+    margin: 0% 5% 0% 5%;
+
+
+
+}
 
 
 img { 
@@ -126,6 +140,9 @@ img:hover {
     transition: 0.5s ; 
 }
 
+.active{
+    width: 100%;
+}
 
 
 
@@ -177,10 +194,26 @@ img:hover {
         justify-content: center;
         margin: 0;
     }
+    .project-container{
+        margin: 0% 5% 0% 5%;
+        display: flex;
+        flex-direction: column;
 
+
+
+    }
+    .project-desc{
+        margin: 0% 5% 0% 5%;        
+    }
     .projects-content{
         margin-bottom: 50px;
     }
+
+
+
+
+
+
 
 
 

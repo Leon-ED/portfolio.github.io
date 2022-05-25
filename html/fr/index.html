@@ -59,52 +59,126 @@
             <h1>Mes projets</h1>
         </div>
 
+
+
+
+        <!-- Projets réalisés lors du BUT Informatique :  -->
         <div class="projects" id="projects">
 
-            <div class="projects-content" onclick="click()">
-                <img src="../../docs/images/place_holder.png" alt="Azul project" height="300">
-                <h2>Projet Python</h2>
+
+            <!-- Projet python :  -->
+            <div class="project-container">
+                <div class="projects-content" >
+                    <img src="../../docs/images/place_holder.png" onclick="affiche('python')" alt="Azul project" height="300">
+                    <h2>Projet Python</h2>
+                </div>
+                <div class="project-desc" id="python" style="display: none;">
+                    <p>
+                        <h3>Projet 1er semestre du BUT Informatique :</h3>
+                        <strong>Sujet du projet : </strong><a href="../../docs/sujets/python.pdf" target="_blank">Sujet</a><br>
+                        <strong>Code source : </strong><a href="../../docs/sujets/python.pdf" target="_blank">Github</a><br>
+                        <strong>Durée :</strong> 3 mois.<br>
+                        <strong>Langages(s) :</strong> Python. <br>
+                        <strong>Matière(s) :</strong>Initiation au développement. <br>
+                        <strong>Configuration : </strong>Travail en binôme . <br>
+                        <strong>Note obtenue : </strong>15,5/20<br>
+                        <strong>Description : </strong><br>
+                        
+                        Reproduction du jeu <a href="http://">Azul</a> en Python avec l'interface graphique de l'université upemtk.<br>
+                        Interdiction d'utiliser d'autres modules que ceux standard de Python et la programmation orientée objets.<br>
+                        Implémentation d'un fonction de sauvegarde, de la possibilité de jouer jusqu'à 4 joueurs et d'un mode de jeu en affrontant l'ordinateur.<br>
+                    </p>
+                </div>
             </div>
-            <div class="project-desc" id="python" style="display: none;">
-                <p>
-                    <h3>Projet 1er semestre du BUT Informatique :</h3>
-                    <strong>Sujet du projet : </strong><a href="http://">Ici</a><br>
-                    <strong>Durée :</strong> 3 mois.<br>
-                    <strong>Langages(s) :</strong> Python. <br>
-                    <strong>Matière(s) :</strong>Initiation au développement. <br>
-                    <strong>Configuration : </strong>Travail en binôme . <br>
-                    <strong>Note obtenue : </strong>15,5/20<br>
-                    <strong>Description : </strong><br>
-                    
-                    Reproduction du jeu <a href="http://">Azul</a> en Python avec l'interface graphique de l'université upemtk.<br>
-                    Interdiction d'utiliser d'autres modules que ceux standard de Python et la programmation orientée objets.<br>
-                    Implémentation d'un fonction de sauvegarde, de la possibilité de jouer jusqu'à 4 joueurs et d'un mode de jeu en affrontant l'ordinateur.<br>
-                </p>
+
+
+            <!-- Projet UNESCO :  -->
+            <div class="project-container">
+                <div class="projects-content">
+                    <img src="../../docs/images/place_holder.png" onclick="affiche('unesco')" alt="Projet unesco" height="300">
+                    <h2>Projet UNESCO</h2>
+                </div>
+                <div class="project-desc" id="unesco" style="display: none;">
+                    <p>
+                        <h3>Projet 1er/2eme semestre du BUT Informatique :</h3>
+                        <strong>Sujet du projet : </strong><a href="#" target="_blank">Non disponible</a><br>
+                        <strong>Code source : </strong><a href="../../docs/sujets/python.pdf" target="_blank">Github</a><br>                        
+                        <strong>Durée :</strong> 5 mois.<br>
+                        <strong>Langages(s) :</strong> HTML / CSS / PHP. <br>
+                        <strong>Matière(s) :</strong>Développement web / Communication / Anglais <br>
+                        <strong>Configuration : </strong>Travail en groupes de 5 <br>
+                        <strong>Note obtenue : </strong>16/20<br>
+                        <strong>Description : </strong><br>
+                        
+                        Création d'un site web mettant à l'honneur le domaine de Fontainebleau <br>
+                        Au 1er semestre création d'un site statique en français.<br>
+                        Au second semetre passage à un site dynamique avec traduction des contenus en anglais.<br>
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Projet BDD :  -->
+            <div class="project-container">
+                <div class="projects-content">
+                    <img src="../../docs/images/place_holder.png" onclick="affiche('bdd')" alt="Projet base de données" height="300">
+                    <h2>Projet base de données</h2>
+                </div>
+                <div class="project-desc" id="bdd" style="display: none;">
+                    <p>
+                        <h3>Projet 1er/2eme semestre du BUT Informatique :</h3>
+                        <strong>Sujet du projet : </strong><a href="../../docs/sujets/bdd.pdf" target="_blank">Non disponible</a><br>
+                        <strong>Code source : </strong><a href="../../docs/sujets/python.pdf" target="_blank">Github</a><br>                        
+                        <strong>Durée :</strong> 5 mois.<br>
+                        <strong>Langages(s) :</strong> HTML / CSS / PHP / SQL. <br>
+                        <strong>Matière(s) :</strong> Introduction aux base de données / Exploitation d'une base de données <br>
+                        <strong>Configuration : </strong>Travail en binôme <br>
+                        <strong>Note obtenue : </strong>16/20<br>
+                        <strong>Description : </strong><br>
+                        Au premier semestre création de la base de données avec le modèle conceptuel et logique de données<br>
+                        Pour le second semestre, réalisation du site web dynamique pour une station de ski permettant de créer un compte et de réserver <br>
+                        Outil de gestion des réservations, des chambres et des clients pour les administrateurs.<br>
+                        
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Projet JAVA :  -->
+            <div class="project-container">
+                <div class="projects-content">
+                    <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
+                    <h2>Projet Base de données</h2>
+                </div>
+            </div>
+
+
+
+            <!-- Projet IHM :  -->       
+            <div class="project-container">
+                <div class="projects-content">
+                    <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
+                    <h2>Projet Base de données</h2>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="projects-content">
+                    <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
+                    <h2>Projet Base de données</h2>
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="projects-content">
+                    <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
+                    <h2>Projet Base de données</h2>
+                </div>
             </div>
 
 
 
 
-            <div class="projects-content">
-                <img src="../../docs/images/place_holder.png" alt="Unesco project" height="300">
-                <h2>Projet UNESCO</h2>
-            </div>
-            <div class="projects-content">
-                <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
-                <h2>Projet Base de données</h2>
-            </div>
-            <div class="projects-content">
-                <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
-                <h2>Projet Java</h2>
-            </div>
-            <div class="projects-content">
-                <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
-                <h2>Projet IHM</h2>
-            </div>
-            <div class="projects-content">
-                <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
-                <h2>Projet IHM</h2>
-            </div>
 
 
         </div>
@@ -114,17 +188,32 @@
 
 
 
-<script>
-    function click(elem) {
-        console.log("eeeeeeee");
-        var x = document.getElementById(elem);
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-    }
+<script type="text/javascript">
+function affiche(id) {
+    id = document.getElementById(id);
+    parent = id.closest(".project-container");
+    
+
+                if (id.style.display == 'none') {
+                    parent.classList.add("active");
+                    Array.from(document.getElementsByClassName("project-desc")).forEach(function(element) {
+                        if(element.id != id.id) {
+                            element.style.display = 'none';
+                        }
+                    });
+
+
+                    id.style.display = 'block';
+                    id.scrollIntoView({inline: 'center'});
+
+                } else {
+                    parent.classList.remove("active");
+                    document.getElementById("projects").scrollIntoView();
+                    id.style.display = 'none';
+                }
+            }
 </script>
+<noscript><h1>Merci d'activer le javascript afin que le site fonctionne correctement !</h1></noscript>
 
 
 
