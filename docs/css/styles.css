@@ -19,6 +19,21 @@ ul{
     list-style: none;
 }
 
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+a{
+
+    color : rgb(0, 81, 255);
+    text-decoration: dotted;
+}
+
+
+a:hover{
+    color: rgb(255, 0, 0);
+}
 
 nav{
     z-index: 99999;
@@ -51,6 +66,15 @@ nav{
     height: 500px;
 
 }
+.cadre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 .home-content{
     color:white;
@@ -96,6 +120,17 @@ nav{
 .skills ul li{
     line-height: 3em;
     flex: 1 0 21%
+}
+
+.skills ul li div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.skills ul li div img{
+    align-self: center;
 }
 
 .projects{
