@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="../../docs/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <script src="../../docs/js/script.js"></script>
 
     <title>EDMEE Leon portfolio</title>
 </head>
-<body id="home">
-        <nav>
+<body id="home" class="white">
+        <nav id="navi" class="navi">
             <h3>Léon EDMEE</h3>
-            <ul class="top-nav">
+            <ul class="top-nav align-items-center justify-content-center">
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#skills">Mes compétences</a></li>
                 <li><a href="#projects">Mes projets</a></li>
                 <li><a href="#home">Contact</a></li>
+                <li><a href="#" onclick="theme()">Thème</a></li>
             </ul>
         </nav>
         <div class="home">
@@ -190,9 +191,9 @@
                 <div class="project-desc" id="unesco" style="display: none;">
                     <p>
                         <h3>Projet 1er/2eme semestre du BUT Informatique :</h3>
-                        <strong>Nom de la SAE :</strong>SAE 1-05 : Recueil de besoins<br>
+                        <strong>Nom de la SAE :</strong>SAE 1-05 : Recueil de besoins et SAE 2-06 : Organisation d'un travail d'équipe<br>
                         <strong>Sujet du projet : </strong><a href="#" target="_blank">Non disponible</a><br>
-                        <strong>Code source : </strong><a href="../../docs/sujets/python.pdf" target="_blank">Github</a><br>                        
+                        <strong>Code source : </strong><a href="#" target="_blank">Non disponible</a> | <strong>Voir le projet : </strong><a href="https://perso-etudiant.u-pem.fr/~leon.edmee/fr/accueil.html" target="_blank">upem</a><br>                        
                         <strong>Durée :</strong> 5 mois.<br>
                         <strong>Langages(s) :</strong> HTML / CSS / PHP. <br>
                         <strong>Matière(s) :</strong>Développement web / Communication / Anglais <br>
@@ -217,9 +218,9 @@
                 <div class="project-desc" id="bdd" style="display: none;">
                     <p>
                         <h3>Projet 1er/2eme semestre du BUT Informatique :</h3>
-                        <strong>Nom de la SAE :</strong>SAE 1-04 : Création d'une base de données<br>
+                        <strong>Nom de la SAE :</strong>SAE 1-04 : Création d'une base de données et SAE 2-04 : Exploitation d'une base de données <br>
                         <strong>Sujet du projet : </strong><a href="../../docs/sujets/bdd.pdf" target="_blank">sujet</a><br>
-                        <strong>Code source : </strong><a href="../../docs/sujets/python.pdf" target="_blank">Github</a><br>                        
+                        <strong>Code source : </strong><a href="#" target="_blank">Non disponible</a><br>                        
                         <strong>Durée :</strong> 5 mois.<br>
                         <strong>Langages(s) :</strong> HTML / CSS / PHP / SQL. <br>
                         <strong>Matière(s) :</strong> Introduction aux base de données / Exploitation d'une base de données <br>
@@ -238,16 +239,16 @@
             <!-- Projet JAVA :  -->
             <div class="project-container">
                 <div class="projects-content">
-                    <img src="../../docs/images/place_holder.png" onclick="affiche('java')" alt="Projet base de données" height="300">
+                    <img src="../../docs/images/projects/java.PNG" onclick="affiche('java')" alt="Projet java" height="300">
                     <h3>Java</h3>
                 </div>
                 <div class="project-desc" id="java" style="display: none;">
                     <p>
                         <h3>Projet 2nd semestre du BUT Informatique :</h3>
-                        <strong>Nom de la SAE :</strong>SITUATION D'APPRENTISSAGE ET D'EVALUATION<br>
+                        <strong>Nom de la SAE :</strong>SAE 2-01 : Développement d'une application<br>
                         
-                        <strong>Sujet du projet : </strong><a href="../../docs/sujets/bdd.pdf" target="_blank">sujet</a><br>
-                        <strong>Code source : </strong><a href="../../docs/sujets/python.pdf" target="_blank">Github</a><br>                        
+                        <strong>Sujet du projet : </strong><a href="../../docs/sujets/java.pdf" target="_blank">sujet</a><br>
+                        <strong>Code source : </strong><a href="#" target="_blank">Non disponible</a><br>                        
                         <strong>Durée :</strong> 3 mois.<br>
                         <strong>Langages(s) :</strong> Java (programmation orientée objets). <br>
                         <strong>Matière(s) :</strong> Développement orienté objets <br>
@@ -264,15 +265,15 @@
             <!-- Projet IHM :  -->       
             <div class="project-container">
                 <div class="projects-content">
-                    <img src="../../docs/images/place_holder.png" onclick="affiche('ihm')" alt="Projet IHM" height="300">
+                    <img src="../../docs/images/projects/ihm.PNG" onclick="affiche('ihm')" alt="Projet IHM" height="300">
                     <h3>IHM</h3>
                 </div>
                 <div class="project-desc" id="ihm" style="display: none;">
                     <p>
                         <h3>Projet 2nd semestre du BUT Informatique :</h3>
-                        <strong>Nom de la SAE :</strong>SITUATION D'APPRENTISSAGE ET D'EVALUATION<br>
-                        <strong>Sujet du projet : </strong><a href="../../docs/sujets/bdd.pdf" target="_blank">sujet</a><br>
-                        <strong>Code source : </strong><a href="../../docs/sujets/python.pdf" target="_blank">Figma</a><br>                        
+                        <strong>Nom de la SAE :</strong>--<br>
+                        <strong>Sujet du projet : </strong><a href="#" target="_blank">Non disponible</a><br>
+                        <strong>Code source : </strong><a href="https://www.figma.com/file/yb94VKTo2KUZJA7ilMi3wG/IHM-Appli?node-id=0%3A1" target="_blank">Figma</a><br>                        
                         <strong>Durée :</strong> 1 mois.<br>
                         <strong>Langages(s) :</strong> aucuns <br>
                         <strong>Matière(s) :</strong> Développement avec IHM <br>
@@ -287,20 +288,57 @@
                 </div>
             </div>
 
-            <div class="project-container">
+            <!-- <div class="project-container">
                 <div class="projects-content">
                     <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
                     <h3>Projet Base de données</h3>
                 </div>
-            </div>
+            </div> -->
 
+
+
+            <!-- Projet Graphes :  -->       
             <div class="project-container">
                 <div class="projects-content">
-                    <img src="../../docs/images/place_holder.png" alt="Database project" height="300">
-                    <h3>Projet Base de données</h3>
+                    <img src="../../docs/images/projects/graphes.PNG" onclick="affiche('graphes')" alt="Projet graphes" height="300">
+                    <h3>Graphes</h3>
+                
+                </div>
+                <div class="project-desc" id="graphes" style="display: none;">
+                    <p>
+                        <h3>Projet 2nd semestre du BUT Informatique :</h3>
+                        <strong>Nom de la SAE :</strong>SAE 2-02 : Exploration algorithmique d'un problème<br>
+                        <strong>Sujet du projet : </strong><a href="../../docs/sujets/graphes.pdf" target="_blank">sujet</a><br>
+                        <strong>Code source : </strong><a href="https://github.com/Leon-ED/but-projet-graphes" target="_blank">Github</a><br>                        
+                        <strong>Durée :</strong> 1 mois.<br>
+                        <strong>Langages(s) :</strong> Python <br>
+                        <strong>Matière(s) :</strong> Graphes <br>
+                        <strong>Configuration : </strong>Travail en binôme <br>
+                        <strong>Note obtenue : </strong>--<br>
+                        <strong>Description : </strong><br>
+                        Implémentation en Python d'algorithmes de graphes tel que la Déterminisation, la minimisation, l'automate produit ainsi que d'autres algorithmes sur les langages.
+                        
+                    </p>
                 </div>
             </div>
 
+            
+
+
+
+
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 class="titre text-center">Autres projets</h1>
+           <div class="project-container">
+                <div class="projects-content">
+                    <img src="../../docs/images/projects/ubuntu.png" onclick="affiche('ubuntu')" alt="Logo ubuntu" height="150">
+                    <h3>Dual-boot</h3>
+                    <p class="text-center">
+                        Installation d'un Dual-boot Ubuntu, Windows pour le développement.
+                    </p>
+                </div>
+                </div>
 
 
 
@@ -312,33 +350,6 @@
 
 
 
-<script type="text/javascript">
-function affiche(id) {
-    id = document.getElementById(id);
-    parent = id.closest(".project-container");
-    
-
-                if (id.style.display == 'none') {
-                    parent.classList.add("active");
-                    Array.from(document.getElementsByClassName("project-desc")).forEach(function(element) {
-                        if(element.id != id.id) {
-                            parent = element.closest(".project-container");
-                            element.style.display = 'none';
-                            parent.classList.remove("active");
-                        }
-                    });
-
-
-                    id.style.display = 'block';
-                    id.scrollIntoView({inline: 'center'});
-
-                } else {
-                    parent.classList.remove("active");
-                    document.getElementById("projects").scrollIntoView();
-                    id.style.display = 'none';
-                }
-            }
-</script>
 <noscript><h1>Merci d'activer le javascript afin que le site fonctionne correctement !</h1></noscript>
 
 

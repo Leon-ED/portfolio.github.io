@@ -6,6 +6,16 @@ body{
 
     margin: 0;
 }  
+.white{
+    background-color: white;
+    color: black;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+
+
 *{
     scroll-behavior: smooth;
     scroll-margin-top: 50px;
@@ -21,7 +31,6 @@ ul{
 
 nav a{
     text-decoration: none;
-    color: #000;
 }
 
 a{
@@ -36,12 +45,9 @@ a:hover{
 }
 
 nav{
-    z-index: 99999;
+    z-index: 550;
     padding-left: 10%;
     padding-right: 10%;
-    background-color: rgb(255, 255, 255);
-
-    position: sticky;
     top: 0;
     left: 0;
     display: flex;
@@ -99,7 +105,7 @@ nav{
 
 
 .skills{
-    color: rgb(0, 0, 0);
+
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
@@ -263,7 +269,15 @@ img:hover {
 }
 
 
-input:checked ~ .theme{
+/* input:checked ~ .theme{
     color: white;
     background-color: rgb(255, 255, 255);
+} */
+
+
+.titre{
+    padding: 1%;
+    margin: 5% 0 5% 0;
+    border: black 2px solid;
+    border-radius: 10px;
 }
