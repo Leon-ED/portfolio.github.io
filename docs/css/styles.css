@@ -227,6 +227,7 @@ img:hover {
         justify-content: center;
         border: none;
         width: auto;
+        text-align: center;
     }
     .skills{
         width: 100%;
