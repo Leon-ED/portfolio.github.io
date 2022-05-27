@@ -58,9 +58,11 @@ nav{
 
 
 .top-nav{
+    padding-top: 6px;
     display: flex;
     gap: 2rem;
     justify-content: space-between; 
+    align-items: center;
 
 
 
@@ -213,6 +215,7 @@ img:hover {
     .top-nav{
 
         flex-direction: column;
+        
         padding: 0;
     }
 
