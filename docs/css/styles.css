@@ -97,7 +97,7 @@ nav{
 .home-description{
     border: 2px #FFFFFF solid;
     border-radius: 10px;
-    padding: 0 10px 0 20px;
+    padding: 0 10px 10px 20px;
     width: 20%;
     min-width: 300px;
     display: flex;
@@ -229,6 +229,9 @@ img:hover {
         border: none;
         width: auto;
         text-align: center;
+    }
+    .boutons *{
+        margin: 5px;
     }
     .skills{
         width: 100%;
