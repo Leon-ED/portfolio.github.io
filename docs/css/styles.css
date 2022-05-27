@@ -240,6 +240,8 @@ img:hover {
         
     }
     .skills ul{
+        padding: 1%;
+        margin: 1%;
         width: auto;
     }
 
