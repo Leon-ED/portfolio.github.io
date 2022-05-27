@@ -220,6 +220,7 @@ img:hover {
         padding-top: 20px;
         flex-direction: column;
         height: fit-content;
+        padding-bottom: 20px;
         
     }
     .home-description{
