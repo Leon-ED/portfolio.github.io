@@ -200,15 +200,18 @@ img:hover {
 @media screen and (max-width: 801px) {
     nav{
         position: relative;
-        padding: 1%;
         flex-direction: column;
-        padding-bottom: 20px;
+
+        /* padding-bottom: 20px; */
         
 
     }
     .top-nav{
+
         flex-direction: column;
+        padding: 0;
     }
+
     .home{
         height: fit-content;
         
